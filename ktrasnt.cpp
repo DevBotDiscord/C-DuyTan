@@ -2,26 +2,25 @@
 
 using namespace std;
 
-bool snt(int n) {
+int snt(int n) {
     if (n<2)
-        {return false;}
+        {return 0;}
     for (int i = 2; i<n; i++) {
         if (n % i == 0)
-            return false;
+            return 0;
     }
-    return true;
+    return n;
 }
 
 int main() {
-    int n;
+    int n,snt1;
 	cout << "Nhap so n: ";
-    cin >> n;
-
-	cout << "So nguyen to tu 1 toi " << n << " la: "<< endl;
-
+    cin >> n; 
     for (int i = 1; i <=n ; i++) {
-        if (snt(i))
-            cout << i <<endl;
+        snt1=snt(i);
+        if(snt1>0){
+            cout << snt1 << endl;
+        }
     }
 
     return 0;
