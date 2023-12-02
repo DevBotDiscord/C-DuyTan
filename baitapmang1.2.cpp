@@ -2,22 +2,27 @@
 
 using namespace std;
 
-int check_snt(int n) {
+bool check_snt(int n) {
     if (n<2)
-        {return 0;}
+        {return false;}
     for (int i = 2; i<n; i++) {
         if (n % i == 0)
-            return 0;
+            return false;
     }
-    if(n>0)
-    {return n;}
+    return true;
 }        
 void prime_in_array(){
     int s=0;
     int a[10]={3,5,7,12,8,7,6,9,7,5};
-    for(int i=1;i<10;i++){
-        check_snt(a[i]);
+    for(int i=0;i<10;i++){
+        if (check_snt(a[i]))
+        {
+            cout<<a[i]<<endl;
+            s=s+a[i];
+        }
+        
     }
+    cout<<"Prime Sum:"<<s<<endl;
 }
 int main(){
     prime_in_array();
