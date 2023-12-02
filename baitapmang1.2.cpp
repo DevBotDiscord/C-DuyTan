@@ -2,19 +2,24 @@
 
 using namespace std;
 
-int snt(int n) {
+int check_snt(int n) {
     if (n<2)
         {return 0;}
     for (int i = 2; i<n; i++) {
         if (n % i == 0)
             return 0;
     }
-    return n;
+    if(n>0)
+    {return n;}
+}        
+void prime_in_array(){
+    int s=0;
+    int a[10]={3,5,7,12,8,7,6,9,7,5};
+    for(int i=1;i<10;i++){
+        check_snt(a[i]);
+    }
 }
 int main(){
-    int a[10]={3,5,7,12,8,7,6,9,7,5};
-    int tong=a[1]+a[3]+a[5]+a[7]+a[9];
-    cout<<tong<<endl;
-    s = tong_le(a);
+    prime_in_array();
     return 0;
 }
