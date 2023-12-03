@@ -1,0 +1,33 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+/// @param n 
+/// @return 
+bool check_scp(int n){
+    int a;
+    a=sqrt(n);
+    if(a*a==n){
+        return true;
+    }else{
+    return false;
+    }
+}     
+void scp_in_array(){
+    int s=0;
+    int a[10]={3,5,7,12,8,7,6,9,7,25};
+    for(int i=0;i<10;i++){
+        if (check_scp(a[i]))
+        {
+            cout<<a[i]<<endl;
+            s=s+a[i];
+        }
+        
+    }
+    cout<<"SCP Sum:"<<s<<endl;
+}
+int main(){
+    scp_in_array();
+    return 0;
+}
