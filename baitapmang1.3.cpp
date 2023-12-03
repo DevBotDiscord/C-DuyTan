@@ -13,9 +13,10 @@ bool check_scp(int n){
     }else{
     return false;
     }
-}     
+}    
 void scp_in_array(){
     int s=0;
+    int s1=0;
     int a[10]={3,5,7,12,8,7,6,9,7,25};
     for(int i=0;i<10;i++){
         if (check_scp(a[i]))
@@ -23,9 +24,10 @@ void scp_in_array(){
             cout<<a[i]<<endl;
             s=s+a[i];
         }
-        
+        s1=s1+a[i];
     }
     cout<<"SCP Sum:"<<s<<endl;
+    cout<<"Array Sum:"<<s1<<endl;
 }
 int main(){
     scp_in_array();
