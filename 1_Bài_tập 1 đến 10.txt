@@ -1,0 +1,111 @@
+
+Cho 2 dãy số như sau:
+ a = 1 3 4 5 6 3 4 6 7 8 2 1 3 4 8 9 5 6 3
+ b = 1 3 4
+
+Câu 1: tìm số xuất hiện nhiều nhất trong dãy a (Đáp án: 3 xuất hiện 4 lần)
+Câu 2: in ra tất cả các số không có trong b (Đáp án: 2, 5, 6, 7, 8, 9)
+câu 3: dãy b xuất hiện mấy lần trong dãy a? (Đáp án: b xuất hiện 2 lần)
+
+NOTE: dãy số a và b lưu thành 2 dòng trong file BaiTap.INP
+Đáp án: lưu trong file BaiTap.OUT
+==========
+Bài tập 4: tìm dãy con tăng dài nhất trong dãy a. 
+trong dãy a có 3 dãy tăng đều có 5 số (1 3 4 5 6 ; 3 4 6 7 8; 1 3 4 8 9) 
+Đáp án lấy dãy cuối cùng: 1 3 4 8 9
+
+=========
+Bài tập 5: in ra các dãy con của a[4] = {1,5,2,5} 
+DÃY CON LÀ DÃY CÁC PHẦN TỬ LIÊN TIẾP NHAU
+Hướng dẫn:
+- Dãy có 1 phần tử: {1},{5},{2},{5} 
+- Dãy có 2 phần tử: {1,5}, {5,2} , {2,5}
+- Dãy có 3 phần tử: {1,5,2} , {5,2,5} 
+- Dãy có 4 phần tử: {1,5,2,5} 
+
+CÓ 10 PHẦN TỬ CON
+
+=========
+Bài tập 6: cho chuỗi s="13a7b48cb7d9e68f7"  
+Hãy xoá các ký tự để được chuỗi số  s="1374879687"
+
+=========
+Bài tập 7: tạo file BaiTap7.INP chứa các dãy số như sau:
+5 100
+1 20
+2 30
+3 35
+4 50
+5 65
+Hướng dẫn: 
+ Dòng 1: 
+  n=5: có 5 dãy số mỗi dãy có 2 số; số đầu là ký hiệu số xe, số sau là tải trọng của xe đó.
+  m=100: khối lượng cần chở 
+Yêu cầu:
+câu a: Đọc file BaiTap7.INP đưa vào 2 mảng số nguyên a[]={1,2,3,4,5}, b[]={20,30,35,50,65}
+Câu b: Tìm xe nào phù hợp để chở hết  m=100 tấn
+
+KẾT QUẢ :
+xe: 1,2,4 hoặc 3,5
+=========
+
+Bài tập 8: Phương trình bậc 2: ax2+bx+c=0
+Có bao nhiêu bộ 3 (a # b # c)  để PT bậc 2 có nghiệm x = -1?
+  
+ BAI_TAP_8.INP	
+   6
+   4 2 13 7 5 10
+	
+ BAI_TAP_8.OUT
+   2
+
+  * BAI_TAP_8.INP gồm 2 dòng: 
+    Dòng đầu chỉ có 1 6
+    Dòng 2 chứa 6 số nguyên, các số này là những tham số a,b và c của pt bậc 2.
+  * BAI_TAP_8.OUT: kết quả
+   
+Ví dụ:  
+a=2, b=7, c=5  
+a=5, b=7, c=2 
+a=2, b=4, c=2 (không được vì a=c=2)
+a=5, b=10, c=5 (không được vì a=c=5)
+như vậy có 2 bộ 3 thỏa điều kiện.
+
+========
+Bài tập 9:
+Cho chuỗi s="oxoxxoxxxxxo"
+Cho biết "x" xuất hiện bao nhiêu lần trong s
+
+=========
+Bài tập 10:
+Tìm các số siêu nguyên tố từ 1-1000
+Số siêu nguyên tố là khi bỏ đi số cuối nó vẫn là số nguyên tố, ví dụ:
+7331 
+733
+73
+7
+
+============================================
+Thuật toán Dijkstra
+Tìm đường đi ngắn nhất từ đỉnh 0 đến đỉnh 8 
+.INP
+0 1 25
+0 2 20
+0 3 21
+1 4 10
+2 5 15
+2 4 6
+3 5 25
+4 6 23
+5 6 19
+5 7 20
+6 7 18
+6 8 17
+7 8 203
+
+.OUT 
+0 2 4 6 8
+66
+
+=============================================
+
