@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+#define read(file) freopen(file, "r", stdin)
+#define write(file) freopen(file, "w", stdout)
+
+int main() {
+  read("test.inp");
+  write("test.out");
+  int n;
+  cin >> n;
+  int x[n];
+  for (int i = 0; i < n; i++) {
+    cin >> x[i];
+    // cout << a[i] << " ";
+  }
+  for (int i = 0; i < n; i += 3) {
+    int a = x[i];
+  }
+}
